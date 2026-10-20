@@ -1,0 +1,32 @@
+# Go build output and test artifacts
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+*.prof
+coverage.out
+bin/
+dist/
+
+# Go workspace files (go.sum stays tracked; vendor/ is not ignored)
+go.work
+go.work.sum
+
+# Local secrets (the example file is the only tracked env file)
+.env
+.env.*
+!.env.example
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+
+# Shared AI tooling (symlinks to ../ai, never committed)
+/CLAUDE.md
+/.claude
+/.serena/
+/graphify-out/
